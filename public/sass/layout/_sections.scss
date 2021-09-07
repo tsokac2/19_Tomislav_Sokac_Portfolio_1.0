@@ -1,0 +1,344 @@
+.section {
+  padding-top: 70px;
+  @include response(md) {
+  padding-top: 60px;
+  }
+  @include response(sm) {
+  padding-top: 60px;
+  }
+
+/*--- SECTION HEADER ---*/
+.section-squer-wrap {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 12rem;
+  margin: 3rem 0 0 3rem;
+  border: 4px solid rgba(2, 44, 67,.2);
+  transform: rotate(45deg);
+  @include response(md) {
+    width: 10rem;
+    height: 10rem;
+  }
+  @include response(sm) {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1rem;
+    border: 2px solid rgba(2, 44, 67,.2);
+  }
+  @include response(xs) {
+    width: 5rem;
+    height: 5rem;
+    margin-left:0;
+  }
+  @include response(ss) {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 0;
+    border: 1.5px solid rgba(2, 44, 67,.2);
+  }
+  .section-logo {
+    color: rgba(8, 95, 99, 0.8);
+    font-size: 8rem;
+    transform: rotate(-45deg);
+    @include response(md) {
+      font-size: 6rem;
+    }
+    @include response(sm) {
+      font-size: 4rem;
+    }
+    @include response(xs) {
+      font-size: 2.5rem;
+    }
+    @include response(ss) {
+      font-size: 2rem;
+    }
+  }
+}
+.home-heding {
+  font-size: 10rem;
+  font-family: $heding-font;
+  font-weight: bold;
+  color: $g-color;
+  letter-spacing: 10px;
+  margin-top: 2rem;
+  @include response(sm) {
+    font-size: 6rem;
+  }
+  @include response(xs) {
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
+  @include response(ss) {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+  }
+}
+/*--- MAIN CONTENT HOME ---*/
+.h-1 {
+  font-family: $heding-font;
+  color: $light-grey;
+  font-size: 3.5rem;
+  @include response(md) {
+    font-size: 2.7rem;
+  }
+}
+.ts-1 {
+  font-size: 6.5rem;
+  color: rgba(200,218,211, 0.2);
+  font-weight: bold;
+  font-family: $base-font;
+  letter-spacing: 2px;
+  @include response(lg) {
+    font-size: 4rem;
+  }
+  @include response(md) {
+    font-size: 2.5rem;
+  }
+  @include response(sm) {
+    margin-left: 2rem;
+  }
+}
+.ts-2 {
+  font-family: $heding-font;
+  letter-spacing: 1px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin: -5rem 3rem;
+  color: $dark-grey;
+  @include response(lg) {
+    font-size: 3rem;
+    margin: -3rem 2rem;
+  }
+  @include response(md) {
+    font-size: 2.5rem;
+    margin: -2rem 1rem;
+  }
+  @include response(sm) {
+    margin-left: 4rem;
+  }
+}
+.it-guru {
+  font-size: 2rem;
+  color: $g-color;
+  font-weight: bold;
+  font-family: $heding-font;
+}
+.intro-text, .footer-intro {
+  font-family: $base-font;
+  color: black;
+  font-size: 1.5rem;
+}
+/*-- TESTIMONIONAL ITEMS --*/
+.testiomonial {
+  padding-top: 2rem;
+  &-height {
+    height: 10rem;
+    @include response(ss) {
+      height: 12rem;
+    }
+  }
+  &-icon {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $g-color;
+  }
+  &-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $light-grey;
+
+  }
+    &-l {border-top: 1px solid $super-light-grey;}
+    &-g {border-top: 1.3px solid  $g-color;}
+    &-quote {
+        font-style: italic;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $dark-grey;
+        letter-spacing: 1px;
+    }
+    &-name {
+      font-weight: bold;
+      font-style: normal;
+      color: $g-color;
+      font-size: 1.8rem;
+    }
+  }/*-- Testiomonial --*/
+
+  /*-- Profile --*/
+    .profile-img {
+      @include response(sm) {
+        margin-top: 2rem;
+        width: 50%;
+        }
+    }
+
+    .about {
+      &-me {
+        font-family: $heding-font;
+        font-size: 4rem;
+        font-weight: bold;
+        color: $dark-grey;
+      }
+      &-a {
+        font-family: $crazy-font;
+        letter-spacing: 2px;
+        font-size: 6.5rem;
+        margin: -4.5rem 0;
+        color: rgba(8, 95, 99, 0.1);
+      }
+      &-intro {
+        font-family: $base-font;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        @include response(xs) {
+          font-size: 1rem;
+          }
+      .medal {
+        font-weight: bold;
+        color:$g-color;
+        }
+      }
+
+      &-details {
+        .list-group-item {
+          font-size: 1.6rem;
+          color: $light-grey;
+          font-weight: bold;
+          .detail-item {
+            font-weight: bold;
+            color: $g-color;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+/*-- Education --*/
+    .expe {
+      margin-top: 1rem;
+      .ex-role {
+        margin-top: 1.5rem;
+        @include response(xs) {
+          font-size: 2rem;
+        }
+      }
+    }
+/*-- Experience--*/
+.ex-heding {
+  font-size: 10rem;
+  font-family: $heding-font;
+  font-weight: bold;
+  color: $g-color;
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  @include response(lg) {
+    font-size: 8rem;
+  }
+  @include response(md) {
+    font-size: 6rem;
+  }
+  @include response(sm) {
+    font-size: 4.7rem;
+    letter-spacing: 1px;
+  }
+  @include response(xs) {
+    font-size: 4rem;
+
+  }
+  @include response(ss) {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.ex {
+    &-date {
+      font-size: 1.8rem;
+      color: $dark-grey;
+      font-weight: bold;
+    }
+    &-role {
+      font-size: 2.5rem;
+      color: $g-color;
+      font-weight: bold;
+    }
+    &-work {
+      font-size: 1.5rem;
+      color: $dark-grey;
+    }
+    &-achi {
+      font-size: 1.2rem;
+      line-height: 20px;
+      letter-spacing: 1px;
+      color: red;
+    }
+}
+
+/*-- Skills --*/
+.skills {
+  /*-- Progres Bar --*/
+  .sk-heding {
+      font-family: $crazy-font;
+      letter-spacing: 1.5px;
+      color: $light-grey;
+      font-size: 2.5rem;
+      @include response(sm) {
+        font-size: 2rem;
+      }
+  }
+  .sk-title {
+    font-family: $heding-font;
+    color: rgba(8, 95, 99, 0.9);
+    font-style: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    @include response(sm) {
+      font-size: 1rem;
+    }
+  }
+  .pro-bg {
+    background-color: rgba(0,0,0, 0.1);
+    width: 100%;
+    .high-bar {
+      @include pr-basic;
+      width: 90%;
+    }
+    .low-bar {
+      @include pr-basic;
+      width: 75%;
+    }
+    .s-low-bar {
+      @include pr-basic;
+      width: 65%;
+    }
+  }
+}
+
+/*-- Project --*/
+    .pro {
+      margin-top: 2rem;
+      @include response(xs) {
+        border-top: 1px solid rgba(0,0,0, 0.1);
+      }
+      .ex-role {
+        margin-top: 1.5rem;
+      }
+      .c-content {
+          font-size: 1.5rem;
+          color: $dark-grey;
+          font-weight: bold;
+
+          @include response(xs) {
+              font-size: 1rem;
+          }
+        }
+
+
+    }
+
+}/*--End of Section div --*/
