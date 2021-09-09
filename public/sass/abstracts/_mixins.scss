@@ -1,5 +1,9 @@
-/*--- RESPONSIVE BREAK POINTS ---*/
 @mixin response($breakpoint) {
+    @if($breakpoint == xxl) {
+        @media(max-width: 1500px) {
+            @content;
+        }
+    }
     @if($breakpoint == xl) {
         @media(max-width: 1200px) {
             @content;

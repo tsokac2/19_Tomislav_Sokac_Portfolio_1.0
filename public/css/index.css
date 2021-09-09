@@ -1,9 +1,4 @@
 /*--- VARIABLES AND MIXINS ---*/
-/*--- COLOR VARIABLES ---*/
-/*--- FONT FAMILY VARIABLES ---*/
-/*-- Progres Bar --*/
-/*--- FONT SIZE VARIABLES ---*/
-/*--- RESPONSIVE BREAK POINTS ---*/
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -101,7 +96,6 @@ html {
 
 .section {
   padding-top: 70px;
-  /*--- SECTION HEADER ---*/
   /*--- MAIN CONTENT HOME ---*/
   /*-- TESTIMONIONAL ITEMS --*/
   /*-- Testiomonial --*/
@@ -337,29 +331,49 @@ html {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.7); }
   .section .ex-achi {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 20px;
-    letter-spacing: 1px;
-    color: red; }
+    letter-spacing: 1px; }
+  .section .ex-dev-support {
+    margin-top: 1rem; }
+    .section .ex-dev-support ul {
+      margin-left: 2.5rem;
+      list-style-type: circle; }
+      .section .ex-dev-support ul li:not(:first-child) {
+        margin-top: .5rem; }
+      .section .ex-dev-support ul li {
+        font-size: 1.5rem; }
   .section .skills {
     /*-- Progres Bar --*/ }
     .section .skills .sk-heding {
       font-family: "Kanit", sans-serif;
       letter-spacing: 1.5px;
-      color: rgba(0, 0, 0, 0.5);
-      font-size: 2.5rem; }
-      @media (max-width: 576px) {
+      color: rgba(0, 0, 0, 0.5); }
+      @media (max-width: 768px) {
         .section .skills .sk-heding {
-          font-size: 2rem; } }
+          font-size: 2.5rem;
+          color: red; } }
+      @media (max-width: 1500px) {
+        .section .skills .sk-heding {
+          font-size: 3.5rem;
+          color: #5900ff; } }
+    .section .skills .sk-skills-sec {
+      margin-top: 1.5rem;
+      font-family: "Kanit", sans-serif;
+      font-size: 2rem; }
+      @media (max-width: 768px) {
+        .section .skills .sk-skills-sec {
+          font-size: 1.5rem; } }
     .section .skills .sk-title {
+      display: block;
       font-family: "Lato", sans-serif;
       color: rgba(8, 95, 99, 0.9);
       font-style: bold;
       font-size: 1.5rem;
-      margin: 1rem 0 0 0; }
+      margin: .5rem 0 0 1rem; }
       @media (max-width: 576px) {
         .section .skills .sk-title {
-          font-size: 1rem; } }
+          font-size: 1.25rem; } }
     .section .skills .pro-bg {
       background-color: rgba(0, 0, 0, 0.1);
       width: 100%; }
@@ -402,7 +416,6 @@ html {
         .section .pro .c-content {
           font-size: 1rem; } }
 
-/*--End of Section div --*/
 /*-- Footer --*/
 .footer {
   /*-- Details --*/
@@ -585,6 +598,9 @@ html {
 
 /*-- Footer --*/
 /*--- COMPONENTS ---*/
+.section .face-btn {
+  border: none; }
+
 .section .face-button {
   height: 4rem;
   display: inline-block;
