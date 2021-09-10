@@ -294,23 +294,13 @@
       
     }
 }
-
-/*-- Skills --*/
 .skills {
   /*-- Progres Bar --*/
   .sk-heding {
       font-family: $crazy-font;
       letter-spacing: 1.5px;
       color: $light-grey;
-      // font-size: 2.5rem;
-      @include response(md) {
-        font-size: 2.5rem;
-        color:red;
-      }
-      @include response(xxl) {
-        font-size: 3.5rem;
-        color:rgb(89, 0, 255);
-      }
+      font-size: 2.5rem;
   }
   .sk-skills-sec {
       margin-top: 1.5rem;

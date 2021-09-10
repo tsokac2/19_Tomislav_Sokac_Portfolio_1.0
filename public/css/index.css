@@ -102,7 +102,6 @@ html {
   /*-- Profile --*/
   /*-- Education --*/
   /*-- Experience--*/
-  /*-- Skills --*/
   /*-- Project --*/ }
   @media (max-width: 768px) {
     .section {
@@ -348,15 +347,8 @@ html {
     .section .skills .sk-heding {
       font-family: "Kanit", sans-serif;
       letter-spacing: 1.5px;
-      color: rgba(0, 0, 0, 0.5); }
-      @media (max-width: 768px) {
-        .section .skills .sk-heding {
-          font-size: 2.5rem;
-          color: red; } }
-      @media (max-width: 1500px) {
-        .section .skills .sk-heding {
-          font-size: 3.5rem;
-          color: #5900ff; } }
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 2.5rem; }
     .section .skills .sk-skills-sec {
       margin-top: 1.5rem;
       font-family: "Kanit", sans-serif;
