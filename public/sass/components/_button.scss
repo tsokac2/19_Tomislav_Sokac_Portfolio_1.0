@@ -33,14 +33,13 @@
   }
 }
 
-/*-- Profile Details Buttons --*/
 .pro {
   &-button {
     padding: 0.5rem 1rem;
     border: 1.5px solid $g-color;
     letter-spacing: 1px;
     font-size: 1.1rem;
-    // font-weight:bold;
+    font-weight:bold;
     background-color: white;
     @include response(xs) {
       font-size: 1.5rem;
@@ -48,6 +47,11 @@
     &:hover {
       font-weight: bold;
     }
+  }
+  .pro-btn-live {
+    color:rgb(60, 94, 204);
+    a {text-decoration: none;}
+    &:hover {font-weight: bold;}
   }
   .app-border {
     border-right: 1px solid $super-light-grey;

@@ -321,18 +321,23 @@ html {
   .section .ex-date {
     font-size: 1.8rem;
     color: rgba(0, 0, 0, 0.7);
-    font-weight: bold; }
+    font-weight: bolder;
+    margin-bottom: 1rem; }
   .section .ex-role {
     font-size: 2.5rem;
     color: rgba(8, 95, 99, 0.8);
     font-weight: bold; }
   .section .ex-work {
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.7); }
+    font-size: 1.5rem; }
+    .section .ex-work a {
+      color: rgba(0, 0, 0, 0.7); }
+    .section .ex-work i {
+      color: #0199cb; }
   .section .ex-achi {
     font-size: 1.5rem;
-    line-height: 20px;
-    letter-spacing: 1px; }
+    line-height: 20px; }
+    .section .ex-achi a {
+      color: #0199cb; }
   .section .ex-dev-support {
     margin-top: 1rem; }
     .section .ex-dev-support ul {
@@ -621,17 +626,24 @@ html {
   .section .face-button:hover .face-primary {
     margin-top: -4rem; }
 
-/*-- Profile Details Buttons --*/
 .pro-button {
   padding: 0.5rem 1rem;
   border: 1.5px solid rgba(8, 95, 99, 0.8);
   letter-spacing: 1px;
   font-size: 1.1rem;
+  font-weight: bold;
   background-color: white; }
   @media (max-width: 375px) {
     .pro-button {
       font-size: 1.5rem; } }
   .pro-button:hover {
+    font-weight: bold; }
+
+.pro .pro-btn-live {
+  color: #3c5ecc; }
+  .pro .pro-btn-live a {
+    text-decoration: none; }
+  .pro .pro-btn-live:hover {
     font-weight: bold; }
 
 .pro .app-border {

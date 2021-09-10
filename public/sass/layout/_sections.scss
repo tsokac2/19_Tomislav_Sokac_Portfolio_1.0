@@ -260,7 +260,8 @@
     &-date {
       font-size: 1.8rem;
       color: $dark-grey;
-      font-weight: bold;
+      font-weight: bolder;
+      margin-bottom: 1rem;
     }
     &-role {
       font-size: 2.5rem;
@@ -269,12 +270,17 @@
     }
     &-work {
       font-size: 1.5rem;
-      color: $dark-grey;
+      a {color: $dark-grey;}
+      i {
+        color:rgb(1,153,203);
+      }
     }
     &-achi {
       font-size: 1.5rem;
       line-height: 20px;
-      letter-spacing: 1px;
+      a {
+        color:rgb(1,153,203);
+      }
     }
 
     &-dev-support {
